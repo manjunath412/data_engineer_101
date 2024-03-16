@@ -1,0 +1,21 @@
+WARNING:  [16-03-2024 06:07:01] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+INFO:     [16-03-2024 06:07:02] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:    [16-03-2024 06:07:02] Starting component System
+DEBUG:    [16-03-2024 06:07:02] Starting component OpenTelemetryClient
+DEBUG:    [16-03-2024 06:07:02] Starting component SimpleAssignmentPolicy
+DEBUG:    [16-03-2024 06:07:02] Starting component SqliteDB
+DEBUG:    [16-03-2024 06:07:02] Starting component QuotaEnforcer
+DEBUG:    [16-03-2024 06:07:02] Starting component Posthog
+DEBUG:    [16-03-2024 06:07:02] Starting component LocalSegmentManager
+DEBUG:    [16-03-2024 06:07:02] Starting component SegmentAPI
+INFO:     [16-03-2024 06:07:02] Started server process [31188]
+INFO:     [16-03-2024 06:07:02] Waiting for application startup.
+INFO:     [16-03-2024 06:07:02] Application startup complete.
+INFO:     [16-03-2024 06:07:02] Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:     [16-03-2024 06:10:23] ::1:63315 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+INFO:     [16-03-2024 06:10:23] ::1:63315 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+INFO:     [16-03-2024 06:10:23] ::1:63316 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+INFO:     [16-03-2024 06:10:29] ::1:63316 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+DEBUG:    [16-03-2024 06:10:29] Starting component PersistentLocalHnswSegment
+INFO:     [16-03-2024 06:10:29] ::1:63316 - "POST /api/v1/collections/2054b9cf-654e-4ae2-af46-fa04cb91ef1c/add HTTP/1.1" 201
+INFO:     [16-03-2024 06:10:30] ::1:63316 - "POST /api/v1/collections/2054b9cf-654e-4ae2-af46-fa04cb91ef1c/query HTTP/1.1" 200
